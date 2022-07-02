@@ -1,0 +1,23 @@
+<div>
+    <form #add="ngForm">
+        <label>Id:</label>
+        <input type="number" [(ngModel)]="car.id">
+        <br>
+        <label>Brand:</label>
+        <input type="text" [(ngModel)]="car.brand">
+        <br>
+        <label>Model:</label>
+        <input type="text" [(ngModel)]="car.model">
+        <br>
+        <label>Year:</label>
+        <input type="number" [(ngModel)]="car.year" maxlength="4">
+        <br>
+        <label>Type:</label>
+        <input type="text" [(ngModel)]  ="car.type">
+
+        <input type="submit" value="Add Car">
+
+    </form>
+</div>
+
+{{car|json}}

@@ -1,0 +1,23 @@
+<div>
+    <h1>Cars</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let car of (response | async)">
+            <td>{{car.id}}</td>
+            <td>{{car.brand}}</td>
+            <td>{{car.model}}</td>
+            <td>{{car.year}}</td>
+            <td>{{car.type}}</td>
+        </tr>
+    </table>
+    <br>
+</div>
